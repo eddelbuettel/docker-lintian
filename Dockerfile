@@ -5,15 +5,7 @@ FROM debian:unstable
 LABEL maintainer="edd@debian.org"
 
 RUN apt-get update \ 
-	&& apt-get install -y --no-install-recommends \
-		ed \
-		less \
-                lintian \
-		locales \
-		vim-tiny \
-		wget \
-		ca-certificates \
-		fonts-texgyre \
+	&& apt-get install -y --no-install-recommends lintian \
 	&& rm -rf /var/lib/apt/lists/*
 
 ## Configure default locale, see https://github.com/rocker-org/rocker/issues/19
