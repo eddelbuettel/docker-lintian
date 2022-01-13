@@ -1,6 +1,7 @@
 ## Emacs, make this -*- mode: sh; -*-
  
 FROM debian:unstable
+#FROM debian:unstable-slim
 
 LABEL maintainer="edd@debian.org"
 
